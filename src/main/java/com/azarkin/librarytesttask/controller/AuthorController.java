@@ -4,6 +4,7 @@ import com.azarkin.librarytesttask.dto.AuthorDto;
 import com.azarkin.librarytesttask.dto.NewAuthorDto;
 import com.azarkin.librarytesttask.service.AuthorService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Авторы", description = "API для работы с авторами")
 @RequiredArgsConstructor
 @RequestMapping("/author")
 @RestController
